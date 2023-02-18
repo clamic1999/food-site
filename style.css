@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+html{
+    scroll-padding-top: 6.5rem;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: lightpink;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.logo img{
+    height: 70px;
+    width: 200px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+.navbar{
+    position: absolute;
+    left: 60%;
+    top: 40px;
+}
+.navbar a{
+    margin-left: 30px;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: black;
+}
+.navbar a:hover{
+    background-color: black;
+    color: yellow;
+}
+.Home{
+    height: 34.8rem;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+}
+.main{
+    height: 80%;
+    width: 50%;
+    
+}
+.main h1{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-size: 50px;
+    font-style: italic;
+}
+.main p{
+    text-align: center;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    width: 65%;
+    font-size: 30px;
+}
+.main button{
+    position: relative;
+    top: 40%;
+    left: 35%;
+    font-size: 30px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.main button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px chocolate;
+}
+.Home video{
+    height: 70%;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.Menu{
+    height: 34.8rem;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+}
+.card{
+    height: 70%;
+    width: 25%;
+    position: relative;
+    background-color: deepskyblue;
+    margin-left: 50px;
+    left: 70px;
+    top: 70px;
+    border-radius: 20px;
+}
+.card img{
+    height: 70%;
+    width: 80%;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+.card h2{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 15px;
+}
+.card button{
+    font-size: 20px;
+    position: relative;
+    left: 30%;
+    top: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.card button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 10px  yellow;
+}
+.Blog{
+    height: 34.8rem;
+    width: 100%;
+    background-color: deepskyblue;
+    display: flex;
+}
+.Blog img{
+    position: relative;
+    height: 80%;
+    width: 30%;
+    top: 20px;
+    left: 150px;
+    border-radius: 30px;
+}
+
+form{
+    font-size: 20px;
+    width: 20rem;
+    height: 15rem;
+    gap: 10px;
+    display: grid;
+    border: 2px solid black;
+    position: relative;
+    top: 30px;
+    left: 35%;
+}
+form h3{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    position: relative;
+    top: 10px;
+}
+.box{
+    position: relative;
+    width: 80%;
+    left: 20px;
+    font-size: 15px;
+}
+form .button{
+    font-size: 20px;
+}
+footer{
+    height: 34.8rem;
+    width: 100%;
+
+}
+.blog{
+    position: absolute;
+    top: 230%;
+    left: 60%;
+    font-size: 15px;
+}
+hr{
+    height: 6px;
+    width: 80%;
+    position: absolute;
+    top: 260%;
+    left: 10%;
+    background-color: black;
+}
+footer p{
+    position: relative;
+    top: 91%;
+}
+
+/*@media screen and (max-width: 500px){
+    header{
+        height: 250px;
+    }
+    .logo img{
+        left: 30%;
+    }
+    .navbar{
+        display: grid;
+        left: 35%;
+        top: 90px;
+    }
+    .Home{
+        height: 50rem;
+    }
+    .Home video{
+        left: 25%;
+        top: 45%;
+        height: 50%;
+        width: 50%;
+    }
+    .main h1{
+        top: 60%;
+        width: 150%;
+        left: 27%;
+    }
+    .main p{
+        top: 62%;
+        width: 150%;
+        left: 27%;
+    }
+    .main button{
+        top: 65%;
+        left: 160px;
+    }
+    .Menu{
+        height: 70rem;
+        display: grid;
+    }
+    .card{
+        height: 80%;
+        width: 60%;
+        top: 30px;
+        left: 50px;
+    }
+    .card img{
+        height: 70%;
+        width: 50%;
+        left: 75px;
+    }
+    .card h2{
+        top: 5px;
+    }
+    .card button{
+        left: 90px;
+        top: -1px;
+    }
+    .Blog{
+        height: 65rem;
+        display: grid;
+    }
+    .Blog img{
+        height: 90%;
+        width: 70%;
+        left: 70px;
+    }
+    form{
+        left: 85px;
+    }
+    .blog{
+        top: 470%;
+        left: 100px;
+        line-height: 40px;
+    }
+    hr{
+        top: 505%;
+    }
+    footer p{
+        top: 290px;
+        left: 70px;
+    }
+}*/
